@@ -443,7 +443,7 @@ const photos=[
 
 "photo3.jpeg",
 
-"/photo4.jpeg",
+"photo4.jpeg",
 
 "photo5.jpeg",
 
