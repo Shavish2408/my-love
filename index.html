@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Laaduu ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cinzel:wght@500;700&family=Great+Vibes&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ========================= -->
+<!-- BACKGROUND EFFECTS -->
+<!-- ========================= -->
+
+<div id="stars"></div>
+
+<div id="goldParticles"></div>
+
+<div id="hearts"></div>
+
+<canvas id="confetti"></canvas>
+
+<!-- ========================= -->
+<!-- MUSIC -->
+<!-- ========================= -->
+
+<audio
+id="bgMusic"
+loop>
+
+<source
+src="love.mp3"
+type="audio/mpeg">
+
+</audio>
+
+<button
+id="musicBtn">
+
+🎵
+
+</button>
+
+<!-- ========================= -->
+<!-- LOADING PAGE -->
+<!-- ========================= -->
+
+<section
+id="loadingPage"
+class="page active">
+
+<div class="loadingCard">
+
+<div class="loaderCircle"></div>
+
+<h1>
+
+Loading...
+
+</h1>
+
+<p>
+
+Preparing something
+special for you...
+
+❤️
+
+</p>
+
+<div class="loadingBar">
+
+<div
+id="loadingProgress">
+
+</div>
+
+</div>
+
+<span
+id="loadingText">
+
+0%
+
+</span>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- WELCOME PAGE -->
+<!-- ========================= -->
+
+<section
+id="welcomePage"
+class="page">
+
+<div class="glass card">
+
+<h1 class="mainTitle">
+
+To My Beautiful
+
+<span>
+
+Laaduu ❤️
+
+</span>
+
+</h1>
+
+<p class="welcomeText">
+
+Every love story is beautiful...
+
+But ours...
+
+is my favourite.
+
+❤️
+
+This isn't just a website.
+
+It's every smile...
+
+every memory...
+
+every heartbeat...
+
+that belongs only to you.
+
+✨
+
+Close your eyes...
+
+Take a deep breath...
+
+And step into our little world.
+
+</p>
+
+<button
+id="startBtn">
+
+Open My Surprise ❤️
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- PASSWORD PAGE -->
+<!-- ========================= -->
+
+<section
+id="passwordPage"
+class="page">
+
+<div class="glass card">
+
+<h1>
+
+Private Surprise ❤️
+
+</h1>
+
+<p>
+
+Only the owner of my heart
+can unlock this surprise.
+
+</p>
+
+<input
+type="password"
+id="passwordInput"
+placeholder="Enter Password">
+
+<p
+id="passwordError">
+
+</p>
+
+<button
+id="unlockBtn">
+
+Unlock ❤️
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- COUNTDOWN PAGE -->
+<!-- ========================= -->
+
+<section
+id="countdownPage"
+class="page">
+
+<div class="glass card">
+
+<h1>
+
+⏳ Countdown
+
+</h1>
+
+<p>
+
+Every second brings me
+closer to your beautiful smile.
+
+❤️
+
+</p>
+
+<div class="countdown">
+
+<div class="timeBox">
+
+<h2 id="days">
+
+00
+
+</h2>
+
+<span>
+
+Days
+
+</span>
+
+</div>
+
+<div class="timeBox">
+
+<h2 id="hours">
+
+00
+
+</h2>
+
+<span>
+
+Hours
+
+</span>
+
+</div>
+
+<div class="timeBox">
+
+<h2 id="minutes">
+
+00
+
+</h2>
+
+<span>
+
+Minutes
+
+</span>
+
+</div>
+
+<div class="timeBox">
+
+<h2 id="seconds">
+
+00
+
+</h2>
+
+<span>
+
+Seconds
+
+</span>
+
+</div>
+
+</div>
+
+<p class="countdownNote">
+
+Every moment reminds me
+how lucky I am to have you. ❤️
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- BIRTHDAY PAGE -->
+<!-- ========================= -->
+
+<section
+id="birthdayPage"
+class="page">
+
+<div class="glass card">
+
+<h1 class="birthdayTitle">
+
+🎂 Happy Birthday
+
+<span>
+
+My Beautiful Laaduu ❤️
+
+</span>
+
+</h1>
+
+<img
+src="photo1.jpeg"
+alt="Birthday"
+class="mainPhoto">
+
+<p class="birthdayMessage">
+
+Today isn't just another day...
+
+Today is the day
+
+the most beautiful girl
+
+came into this world.
+
+❤️
+
+Thank you
+
+for making my life
+
+more beautiful
+
+just by being in it.
+
+</p>
+
+<button
+id="letterBtn">
+
+💌 Read My Letter
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- LETTER PAGE -->
+<!-- ========================= -->
+
+<section
+id="letterPage"
+class="page">
+
+<div class="glass card">
+
+<h1>
+
+💌 My Letter
+
+</h1>
+
+<div
+id="letterBox">
+
+<p
+id="typewriter">
+
+</p>
+
+</div>
+
+<button
+id="journeyBtn">
+
+❤️ Our Journey
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- OUR JOURNEY PAGE -->
+<!-- ========================= -->
+
+<section
+id="journeyPage"
+class="page">
+
+<div class="glass card">
+
+<h1>
+
+❤️ Our Journey ❤️
+
+</h1>
+
+<div class="timeline">
+
+<div class="timelineItem">
+
+<span>🌸</span>
+
+<h3>First Talk</h3>
+
+<p>
+The beginning of the most beautiful story.
+</p>
+
+</div>
+
+<div class="timelineItem">
+
+<span>😊</span>
+
+<h3>First Smile</h3>
+
+<p>
+The smile that stole my heart forever.
+</p>
+
+</div>
+
+<div class="timelineItem">
+
+<span>🤝</span>
+
+<h3>First Hand Hold</h3>
+
+<p>
+The moment I never wanted to end.
+</p>
+
+</div>
+
+<div class="timelineItem">
+
+<span>🤗</span>
+
+<h3>First Hug</h3>
+
+<p>
+The safest place I've ever been.
+</p>
+
+</div>
+
+<div class="timelineItem">
+
+<span>💋</span>
+
+<h3>First Kiss</h3>
+
+<p>
+A memory that will stay forever.
+</p>
+
+</div>
+
+<div class="timelineItem">
+
+<span>💍</span>
+
+<h3>Our Future</h3>
+
+<p>
+One day...
+Forever together ❤️
+</p>
+
+</div>
+
+</div>
+
+<button
+id="galleryBtn">
+
+📸 Our Memories
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- GALLERY PAGE -->
+<!-- ========================= -->
+
+<section
+id="galleryPage"
+class="page">
+
+<div class="glass card">
+
+<h1>
+
+📸 Our Beautiful Memories
+
+</h1>
+
+<div class="galleryFrame">
+
+<img
+id="galleryImage"
+src="photo1.jpeg"
+class="galleryPhoto"
+alt="Gallery">
+
+</div>
+
+<div class="galleryDots">
+
+<span class="dot active"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+
+</div>
+
+<p>
+
+Every picture reminds me
+how lucky I am
+to have you.
+
+❤️
+
+</p>
+
+<button
+id="favoriteBtn">
+
+🌹 Favourite Memory
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- FAVOURITE PAGE -->
+<!-- ========================= -->
+
+<section
+id="favoritePage"
+class="page">
+
+<div class="glass card">
+
+<h1>
+
+🌹 Favourite Memory
+
+</h1>
+
+<img
+src="favorite.jpeg"
+class="favoritePhoto"
+alt="Favourite">
+
+<p>
+
+Out of every smile...
+
+every laugh...
+
+every memory...
+
+This one
+will always be
+my favourite.
+
+No matter
+where life takes us,
+
+this memory
+will always stay
+inside my heart.
+
+❤️
+
+</p>
+
+<button
+id="proposalBtn">
+
+💍 One Last Question
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- PROPOSAL PAGE -->
+<!-- ========================= -->
+
+<section
+id="proposalPage"
+class="page">
+
+<div class="glass card">
+
+<img
+src="ring.png"
+class="ringImage"
+alt="Ring">
+
+<h1>
+
+💍 Will You Marry Me?
+
+</h1>
+
+<p>
+
+You are...
+
+My Best Friend ❤️
+
+My Happiness ❤️
+
+My Home ❤️
+
+My Forever ❤️
+
+I don't want a perfect life...
+
+I just want a lifetime
+
+with you.
+
+</p>
+
+<div class="proposalButtons">
+
+<button
+id="yesBtn">
+
+YES ❤️
+
+</button>
+
+<button
+id="noBtn">
+
+NO 🙈
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- GIFT PAGE -->
+<!-- ========================= -->
+
+<section
+id="giftPage"
+class="page">
+
+<div class="glass card">
+
+<h1>
+
+🎁 One Last Gift
+
+</h1>
+
+<div
+class="giftBox"
+id="giftBox">
+
+🎁
+
+</div>
+
+<p>
+
+Tap the gift...
+
+One last surprise
+
+is waiting for you.
+
+❤️
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- FINAL PAGE -->
+<!-- ========================= -->
+
+<section
+id="finalPage"
+class="page">
+
+<div class="glass card finalCard">
+
+<img
+src="proposal.jpeg"
+class="proposalPhoto"
+alt="Forever">
+
+<h1>
+
+Together Forever ❤️
+
+</h1>
+
+<p class="finalText">
+
+Hi Laaduu ❤️
+
+Thank you...
+for coming into my life.
+
+Thank you...
+
+for every smile...
+every hug...
+every laugh...
+every memory...
+
+You are
+my peace...
+my happiness...
+my home...
+and my forever.
+
+I don't know
+what tomorrow brings...
+But I know
+I want every tomorrow
+with you.
+
+Happy Birthday
+
+My Beautiful Laaduu ❤️
+
+</p>
+
+<h2>
+
+Forever Yours,
+
+Bravish ❤️
+
+</h2>
+
+<div class="infinity">
+
+∞
+
+</div>
+
+<p class="dateText">
+
+04 • 04 • Forever
+
+</p>
+
+<button
+id="replayBtn">
+
+🔄 Replay Our Story
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- SCRIPT -->
+<!-- ========================= -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
