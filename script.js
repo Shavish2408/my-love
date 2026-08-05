@@ -206,7 +206,7 @@ passwordInput.style.animation="";
 
 const birthdayDate=new Date(
 
-"August 1, 2026 00:00:00"
+"August 8, 2026 00:00:00"
 
 ).getTime();
 
