@@ -242,7 +242,7 @@ const now=new Date().getTime();
 
 const distance=
 
-birthdayDate-now;
+birthday-now;
 
 if(distance<=0){
 
