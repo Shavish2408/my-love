@@ -204,11 +204,7 @@ passwordInput.style.animation="";
 
 // CHANGE THIS DATE
 
-const birthdayDate=new Date(
-
-"August 8, 2026 00:00:00"
-
-).getTime();
+const birthday = new Date("2026-08-08T00:00:00").getTime();
 
 const days=
 document.getElementById("days");
